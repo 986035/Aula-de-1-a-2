@@ -192,7 +192,7 @@ class PaymentService:
                 {
                     "$set": {
                         "status": "converted",
-                        "converted_at": PaymentTransaction().created_at
+                        "converted_at": datetime.utcnow()
                     }
                 }
             )
