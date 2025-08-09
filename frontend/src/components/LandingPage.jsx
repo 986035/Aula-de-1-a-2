@@ -221,8 +221,9 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
+      {/* CTA Section with ROV Background */}
+      <section className="cta-section section-with-bg-cta">
+        <div className="section-bg-overlay"></div>
         <div className="container">
           <Card className="cta-card voice-card accent-pink">
             <CardContent className="p-8 text-center">
