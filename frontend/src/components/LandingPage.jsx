@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { CheckCircle, Play, Users, BookOpen, Award, Clock, Download, Target, Star, ArrowRight, PlayCircle } from "lucide-react";
+import { CheckCircle, Play, Users, BookOpen, Award, Clock, Download, Target, Star, ArrowRight, PlayCircle, FileText, MessageCircle, Calendar } from "lucide-react";
 import { useCourseInfo, useCheckout, useAnalytics } from "../hooks/useApi";
 import Header from "./Header";
 import Footer from "./Footer";
