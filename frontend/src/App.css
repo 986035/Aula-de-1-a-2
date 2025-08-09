@@ -977,6 +977,7 @@ body {
     text-align: center;
     gap: 0.75rem;
     padding: 1.25rem;
+    margin: 0 1rem;
   }
   
   .info-icon {
