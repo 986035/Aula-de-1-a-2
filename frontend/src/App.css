@@ -130,9 +130,9 @@ body {
   color: var(--text-muted);
 }
 
-/* Button Styles */
+/* Button Styles - Maritime Theme */
 .btn-primary {
-  background: var(--text-primary);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   color: white;
   border: none;
   border-radius: 2rem;
@@ -150,11 +150,13 @@ body {
   justify-content: center;
   text-decoration: none;
   line-height: 1.2;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
 .btn-primary:hover {
-  background: var(--text-secondary);
+  background: linear-gradient(135deg, #2980b9 0%, #21618c 100%);
   transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
 }
 
 .btn-primary:active {
@@ -175,7 +177,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   min-height: 2.25rem;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -184,8 +186,8 @@ body {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: rgba(0, 0, 0, 0.2);
+  background: rgba(52, 152, 219, 0.2);
+  border-color: rgba(52, 152, 219, 0.4);
   transform: scale(1.02);
 }
 
