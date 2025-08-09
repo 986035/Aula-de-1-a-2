@@ -201,12 +201,12 @@ class PaymentService:
         """Update transaction based on webhook data"""
         update_data = {
             "payment_status": webhook_response.payment_status,
-            "updated_at": PaymentTransaction().created_at
+            "updated_at": datetime.utcnow()
         }
         
         if webhook_response.payment_status == "paid":
             update_data["payment_status"] = "completed"
-            update_data["completed_at"] = PaymentTransaction().created_at
+            update_data["completed_at"] = datetime.utcnow()
         
         await self.db.payment_transactions.update_one(
             {"session_id": webhook_response.session_id},
