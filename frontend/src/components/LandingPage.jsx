@@ -1,0 +1,230 @@
+import React, { useState, useEffect } from "react";
+import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
+import { Badge } from "./ui/badge";
+import { CheckCircle, Play, Users, BookOpen, Award, Telegram, Clock, Download, Target, Star, ArrowRight } from "lucide-react";
+import { mockData } from "../data/mock";
+import Header from "./Header";
+import Footer from "./Footer";
+
+const LandingPage = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  const handlePurchase = () => {
+    console.log("Redirect to purchase page");
+    // Mock purchase action - will be replaced with real payment integration
+  };
+
+  const handleLearnMore = () => {
+    document.getElementById('benefits').scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <div className="landing-page">
+      <Header />
+      
+      {/* Hero Section */}
+      <section className={`hero-section ${isVisible ? 'animate-in' : ''}`}>
+        <div className="container">
+          <div className="hero-content">
+            <div className="hero-announcement">
+              <Target size={16} />
+              <span>Vagas Limitadas • Acesso Prioritário</span>
+            </div>
+            
+            <h1 className="hero-title heading-hero">
+              {mockData.product.name}
+            </h1>
+            
+            <p className="hero-subtitle body-large">
+              {mockData.product.subtitle}
+            </p>
+            
+            <div className="hero-actions">
+              <Button onClick={handlePurchase} className="btn-primary">
+                Garantir Minha Vaga
+                <ArrowRight size={16} className="ml-2" />
+              </Button>
+              <Button onClick={handleLearnMore} variant="outline" className="btn-secondary">
+                Conhecer o Método
+              </Button>
+            </div>
+            
+            <div className="hero-stats">
+              <div className="stat-item">
+                <span className="stat-number">15+</span>
+                <span className="stat-label">Anos de Experiência</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">10</span>
+                <span className="stat-label">Aulas Completas</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">100%</span>
+                <span className="stat-label">Método Prático</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section id="benefits" className="benefits-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="heading-1">O que você vai aprender</h2>
+            <p className="body-medium">Conteúdo completo e prático para se destacar no mercado offshore</p>
+          </div>
+          
+          <div className="voice-grid">
+            {mockData.benefits.map((benefit, index) => (
+              <Card key={index} className="voice-card accent-blue hover-lift">
+                <CardContent className="p-6">
+                  <div className="benefit-icon">
+                    <CheckCircle className="text-accent-blue-400" size={24} />
+                  </div>
+                  <h3 className="voice-card-title">{benefit.title}</h3>
+                  <p className="voice-card-description">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience Section */}
+      <section className="target-section">
+        <div className="container">
+          <div className="target-content">
+            <div className="target-text">
+              <h2 className="heading-1">Para quem é esse curso?</h2>
+              <div className="target-list">
+                {mockData.targetAudience.map((item, index) => (
+                  <div key={index} className="target-item">
+                    <CheckCircle className="text-green-500" size={20} />
+                    <span className="body-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="target-visual">
+              <Card className="voice-card accent-green">
+                <CardContent className="p-6 text-center">
+                  <Users size={48} className="mx-auto mb-4 text-accent-green-400" />
+                  <h3 className="voice-card-title">Técnicos de Todas as Áreas</h3>
+                  <p className="voice-card-description">
+                    Elétrica, Mecânica, Automação, Mecatrônica e áreas correlatas
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Content Section */}
+      <section className="content-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="heading-1">O que você recebe ao se inscrever</h2>
+            <p className="body-medium">Conteúdo completo para sua preparação</p>
+          </div>
+          
+          <div className="content-grid">
+            {mockData.courseContent.map((item, index) => (
+              <Card key={index} className="voice-card accent-purple">
+                <CardContent className="p-5">
+                  <div className="content-icon">
+                    <item.icon className="text-accent-purple-400" size={32} />
+                  </div>
+                  <h3 className="heading-3">{item.title}</h3>
+                  <p className="body-small">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bonus Section */}
+      <section className="bonus-section">
+        <div className="container">
+          <div className="bonus-header">
+            <Badge variant="secondary" className="bonus-badge">
+              <Star size={16} />
+              BÔNUS EXCLUSIVOS
+            </Badge>
+            <h2 className="heading-1">Vantagens adicionais para os primeiros inscritos</h2>
+          </div>
+          
+          <div className="ai-grid">
+            {mockData.bonuses.map((bonus, index) => (
+              <Card key={index} className="voice-card accent-orange hover-lift">
+                <CardContent className="p-6">
+                  <div className="bonus-icon">
+                    <bonus.icon className="text-accent-orange-400" size={28} />
+                  </div>
+                  <h3 className="voice-card-title">{bonus.title}</h3>
+                  <p className="voice-card-description">{bonus.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Instructor Section */}
+      <section className="instructor-section">
+        <div className="container">
+          <Card className="instructor-card voice-card accent-grey">
+            <CardContent className="p-8">
+              <div className="instructor-content">
+                <div className="instructor-info">
+                  <h2 className="heading-1">Sobre o Instrutor</h2>
+                  <h3 className="heading-2">{mockData.instructor.name}</h3>
+                  <p className="body-large">{mockData.instructor.bio}</p>
+                  <p className="body-medium">{mockData.instructor.experience}</p>
+                </div>
+                <div className="instructor-visual">
+                  <div className="instructor-avatar">
+                    <Award size={64} className="text-accent-blue-400" />
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="cta-section">
+        <div className="container">
+          <Card className="cta-card voice-card accent-pink">
+            <CardContent className="p-8 text-center">
+              <h2 className="heading-1">Não deixe sua oportunidade escapar</h2>
+              <p className="body-large">
+                Os primeiros inscritos terão acompanhamento especial e acesso prioritário às atualizações do curso.
+              </p>
+              <div className="cta-urgency">
+                <Clock size={20} />
+                <span className="mono-text">Vagas limitadas para o grupo com acesso direto ao instrutor</span>
+              </div>
+              <Button onClick={handlePurchase} size="lg" className="btn-primary cta-button">
+                Garantir Minha Vaga Agora
+                <ArrowRight size={20} className="ml-2" />
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default LandingPage;
