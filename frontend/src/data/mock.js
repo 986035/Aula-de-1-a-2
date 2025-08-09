@@ -8,6 +8,22 @@ export const mockData = {
     oldPrice: "R$ 497,00"
   },
   
+  // Easy to modify content
+  hero: {
+    announcement: "Vagas Limitadas • Acesso Prioritário",
+    title: "VAGA BLINDADA ROV",
+    subtitle: "Tudo o que você precisa para proteger sua vaga dos concorrentes. O guia completo para conquistar uma vaga de trainee de ROV no mercado offshore.",
+    videoText: "▶ Assista ao vídeo de apresentação",
+    ctaPrimary: "Garantir Minha Vaga",
+    ctaSecondary: "Conhecer o Método"
+  },
+  
+  stats: [
+    { number: "15+", label: "Anos de Experiência" },
+    { number: "10", label: "Aulas Completas" },
+    { number: "100%", label: "Método Prático" }
+  ],
+  
   benefits: [
     {
       title: "Mercado Offshore e ROV",
@@ -102,5 +118,35 @@ export const mockData = {
     name: "Leandro Pinheiro",
     bio: "Técnico mecatrônico com mais de 15 anos de experiência no setor offshore, especializado em sistemas de ROV.",
     experience: "Começou como técnico de ferramentas, evoluiu para piloto e hoje é referência em treinamento de novos profissionais."
+  },
+  
+  // Customizable texts
+  sections: {
+    benefits: {
+      title: "O que você vai aprender",
+      subtitle: "Conteúdo completo e prático para se destacar no mercado offshore"
+    },
+    target: {
+      title: "Para quem é esse curso?",
+      cardTitle: "Técnicos de Todas as Áreas",
+      cardDescription: "Elétrica, Mecânica, Automação, Mecatrônica e áreas correlatas"
+    },
+    content: {
+      title: "O que você recebe ao se inscrever",
+      subtitle: "Conteúdo completo para sua preparação"
+    },
+    bonus: {
+      badge: "BÔNUS EXCLUSIVOS",
+      title: "Vantagens adicionais para os primeiros inscritos"
+    },
+    instructor: {
+      title: "Sobre o Instrutor"
+    },
+    cta: {
+      title: "Não deixe sua oportunidade escapar",
+      subtitle: "Os primeiros inscritos terão acompanhamento especial e acesso prioritário às atualizações do curso.",
+      urgency: "Vagas limitadas para o grupo com acesso direto ao instrutor",
+      button: "Garantir Minha Vaga Agora"
+    }
   }
 };

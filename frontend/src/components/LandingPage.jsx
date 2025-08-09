@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { CheckCircle, Play, Users, BookOpen, Award, Telegram, Clock, Download, Target, Star, ArrowRight } from "lucide-react";
+import { CheckCircle, Play, Users, BookOpen, Award, Clock, Download, Target, Star, ArrowRight, PlayCircle } from "lucide-react";
 import { mockData } from "../data/mock";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -23,12 +23,18 @@ const LandingPage = () => {
     document.getElementById('benefits').scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleWatchVideo = () => {
+    console.log("Play introduction video");
+    // Will be replaced with actual video player
+  };
+
   return (
     <div className="landing-page">
       <Header />
       
-      {/* Hero Section */}
-      <section className={`hero-section ${isVisible ? 'animate-in' : ''}`}>
+      {/* Hero Section with Background */}
+      <section className={`hero-section hero-with-bg ${isVisible ? 'animate-in' : ''}`}>
+        <div className="hero-bg-overlay"></div>
         <div className="container">
           <div className="hero-content">
             <div className="hero-announcement">
@@ -43,6 +49,18 @@ const LandingPage = () => {
             <p className="hero-subtitle body-large">
               {mockData.product.subtitle}
             </p>
+
+            {/* Video Section */}
+            <div className="hero-video-container">
+              <div className="video-placeholder" onClick={handleWatchVideo}>
+                <div className="video-play-button">
+                  <PlayCircle size={64} />
+                </div>
+                <div className="video-overlay">
+                  <span className="video-text">▶ Assista ao vídeo de apresentação</span>
+                </div>
+              </div>
+            </div>
             
             <div className="hero-actions">
               <Button onClick={handlePurchase} className="btn-primary">
@@ -72,8 +90,9 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section id="benefits" className="benefits-section">
+      {/* Benefits Section with Background */}
+      <section id="benefits" className="benefits-section section-with-bg">
+        <div className="section-bg-overlay"></div>
         <div className="container">
           <div className="section-header">
             <h2 className="heading-1">O que você vai aprender</h2>
@@ -126,8 +145,9 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Course Content Section */}
-      <section className="content-section">
+      {/* Course Content Section with Background */}
+      <section className="content-section section-with-bg-alt">
+        <div className="section-bg-overlay"></div>
         <div className="container">
           <div className="section-header">
             <h2 className="heading-1">O que você recebe ao se inscrever</h2>
@@ -177,8 +197,9 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Instructor Section */}
-      <section className="instructor-section">
+      {/* Instructor Section with Background */}
+      <section className="instructor-section section-with-bg-underwater">
+        <div className="section-bg-overlay"></div>
         <div className="container">
           <Card className="instructor-card voice-card accent-grey">
             <CardContent className="p-8">

@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# VAGA BLINDADA ROV - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Como Personalizar Facilmente
 
-## Available Scripts
+### 1. **Alterando Imagens de Fundo**
+Edite o arquivo `/src/data/config.js`:
+```javascript
+images: {
+  heroBackground: "URL_DA_SUA_IMAGEM_HERO",
+  benefitsBackground: "URL_DA_SUA_IMAGEM_BENEFICIOS", 
+  contentBackground: "URL_DA_SUA_IMAGEM_CONTEUDO",
+  instructorBackground: "URL_DA_SUA_IMAGEM_INSTRUTOR"
+}
+```
 
-In the project directory, you can run:
+### 2. **Modificando Textos e Conteúdo**
+Edite o arquivo `/src/data/mock.js`:
+- **Hero**: título, subtítulo, CTAs
+- **Benefícios**: adicionar/remover/editar benefícios
+- **Conteúdo do curso**: modificar itens inclusos
+- **Bônus**: personalizar bônus oferecidos
+- **Instrutor**: alterar informações
 
-### `npm start`
+### 3. **Adicionando Vídeo Real**
+No arquivo `/src/data/config.js`:
+```javascript
+video: {
+  placeholder: false, // Mudar para false
+  embedUrl: "https://www.youtube.com/embed/SEU_VIDEO_ID",
+  thumbnailUrl: "URL_DA_THUMBNAIL" // opcional
+}
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 4. **Configurações de Contato**
+No arquivo `/src/data/config.js`:
+```javascript
+contact: {
+  telegram: "@seutelegram",
+  email: "seu@email.com", 
+  phone: "+55 11 99999-9999"
+}
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 5. **Cores e Design**
+Modifique as variáveis CSS em `/src/App.css`:
+```css
+:root {
+  --bg-page: #FFF9F2; /* Cor de fundo principal */
+  --text-primary: #232323; /* Cor do texto */
+  /* Cores dos cards */
+  --accent-blue-200: #E4EDF8;
+  --accent-purple-200: #F9E8FA;
+  /* etc... */
+}
+```
 
-### `npm test`
+## 📁 Estrutura de Arquivos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── components/
+│   ├── LandingPage.jsx    # Componente principal
+│   ├── Header.jsx         # Cabeçalho
+│   └── Footer.jsx         # Rodapé
+├── data/
+│   ├── mock.js           # Conteúdo editável
+│   └── config.js         # Configurações (imagens, vídeo, etc)
+├── App.css              # Estilos (cores, tipografia)
+└── App.js               # Aplicação principal
+```
 
-### `npm run build`
+## 🎨 Imagens Incluídas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Hero**: Plataforma petrolífera offshore (impacto visual)
+2. **Benefícios**: Plataforma em águas brasileiras (contexto local)
+3. **Conteúdo**: Equipamentos subaquáticos profissionais
+4. **Instrutor**: Mergulhador profissional (experiência técnica)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔧 Personalizações Rápidas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Alterar Preço
+```javascript
+// Em mock.js
+product: {
+  price: "R$ 397,00",
+  oldPrice: "R$ 597,00"
+}
+```
 
-### `npm run eject`
+### Adicionar/Remover Seções
+Edite `LandingPage.jsx` para adicionar novas seções ou remover existentes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Modificar Botões CTA
+```javascript
+// Em mock.js
+hero: {
+  ctaPrimary: "Seu Novo Texto",
+  ctaSecondary: "Outro Texto"
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 Responsividade
+A página é totalmente responsiva e se adapta a:
+- Desktop (1280px+)
+- Tablet (768px-1279px) 
+- Mobile (<768px)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎯 Funcionalidades Implementadas
+- ✅ Header fixo com navegação suave
+- ✅ Hero com espaço para vídeo
+- ✅ Backgrounds com imagens offshore
+- ✅ Cards coloridos organizados
+- ✅ Seção de instrutor destacada
+- ✅ CTAs estratégicos
+- ✅ Footer completo
+- ✅ Animações suaves
+- ✅ Fácil personalização
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Próximos Passos
+1. Substituir dados mockados por backend real
+2. Integrar sistema de pagamento
+3. Adicionar analytics (GA4, Facebook Pixel)
+4. Implementar formulários de captura
+5. Adicionar chat ou WhatsApp integration
