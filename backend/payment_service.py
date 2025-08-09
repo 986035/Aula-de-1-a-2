@@ -7,8 +7,8 @@ from emergentintegrations.payments.stripe.checkout import (
     CheckoutStatusResponse, 
     CheckoutSessionRequest
 )
-from .course_data import COURSE_PACKAGES
-from .models import PaymentTransaction, CheckoutRequest, PaymentStatusResponse
+from course_data import COURSE_PACKAGES
+from models import PaymentTransaction, CheckoutRequest, PaymentStatusResponse
 from motor.motor_asyncio import AsyncIOMotorClient
 import logging
 
