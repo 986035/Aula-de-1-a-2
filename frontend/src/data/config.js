@@ -1,12 +1,12 @@
 // Configuration file for easy modifications
 export const siteConfig = {
-  // Images - Easy to change - ROV Specific Theme
+  // Images - Custom ROV Images - AUTHENTIC COLLECTION
   images: {
-    heroBackground: "https://images.unsplash.com/photo-1705590002103-ca91a4fb5ca0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMG9pbCUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDc3MTkxMXww&ixlib=rb-4.1.0&q=85",
-    benefitsBackground: "https://images.unsplash.com/photo-1590530794437-ad29186f324f?crop=entropy&cs=srgb&fm=jpg&q=85", // ROV equipment underwater
-    contentBackground: "https://images.pexels.com/photos/33362145/pexels-photo-33362145.jpeg", // Yellow underwater ROV
-    instructorBackground: "https://cdn.pixabay.com/photo/2020/06/10/14/20/submarine-5282908_1280.jpg", // Specific ROV submarine
-    ctaBackground: "https://images.pexels.com/photos/33285083/pexels-photo-33285083.jpeg" // Underwater robotic equipment
+    heroBackground: "https://customer-assets.emergentagent.com/job_brindada-rov-sales/artifacts/esbx2o0o_1.%20Hero%20%28impress%C3%A3o%20inicial%29.jpg",
+    benefitsBackground: "https://customer-assets.emergentagent.com/job_brindada-rov-sales/artifacts/n0ysh6x7_2.%20Benefits%20%28aprendizado%29.jpg",
+    contentBackground: "https://customer-assets.emergentagent.com/job_brindada-rov-sales/artifacts/7ugqg9g7_3.%20Content%20%28conte%C3%BAdo%29.png",
+    instructorBackground: "https://customer-assets.emergentagent.com/job_brindada-rov-sales/artifacts/s26e635i_4.%20Instrutor%20%28professor%29.jpg",
+    ctaBackground: "https://customer-assets.emergentagent.com/job_brindada-rov-sales/artifacts/f8h4bo7x_5.%20CTA%20%28convers%C3%A3o%20final%29.jpg"
   },
   
   // Video settings
