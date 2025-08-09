@@ -60,8 +60,10 @@ const LandingPage = () => {
                   <span className="video-text">▶ Assista ao vídeo de apresentação</span>
                 </div>
               </div>
-              
-              {/* Important Information Box */}
+            </div>
+            
+            {/* Important Information Box - Below Video */}
+            <div className="info-box-container">
               <div className="info-box">
                 <div className="info-icon">💡</div>
                 <div className="info-content">
