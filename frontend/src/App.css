@@ -228,12 +228,41 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.voice-card.accent-purple { background: var(--accent-purple-200); }
-.voice-card.accent-blue { background: var(--accent-blue-200); }
-.voice-card.accent-orange { background: var(--accent-orange-200); }
-.voice-card.accent-pink { background: var(--accent-pink-200); }
-.voice-card.accent-green { background: var(--accent-green-200); }
-.voice-card.accent-grey { background: var(--accent-grey-200); }
+.voice-card.accent-purple { 
+  background: var(--accent-purple-200); 
+  border: 1px solid rgba(155, 89, 182, 0.3);
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.1);
+}
+
+.voice-card.accent-blue { 
+  background: var(--accent-blue-200); 
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
+}
+
+.voice-card.accent-orange { 
+  background: var(--accent-orange-200); 
+  border: 1px solid rgba(230, 126, 34, 0.3);
+  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.1);
+}
+
+.voice-card.accent-pink { 
+  background: var(--accent-pink-200); 
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.1);
+}
+
+.voice-card.accent-green { 
+  background: var(--accent-green-200); 
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.1);
+}
+
+.voice-card.accent-grey { 
+  background: var(--accent-grey-200); 
+  border: 1px solid rgba(149, 165, 166, 0.3);
+  box-shadow: 0 4px 12px rgba(149, 165, 166, 0.1);
+}
 
 .voice-card-title {
   font-size: 1.25rem;
