@@ -365,8 +365,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 249, 242, 0.88);
-  backdrop-filter: blur(2px);
+  background: rgba(26, 35, 50, 0.75);
+  backdrop-filter: blur(1px);
   z-index: 1;
 }
 
