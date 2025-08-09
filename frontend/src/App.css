@@ -1,49 +1,49 @@
-/* Voice AI Landing Page Styles - Enhanced with Backgrounds */
+/* Voice AI Landing Page Styles - Maritime/Offshore Theme */
 :root {
-  /* Backgrounds - Exact Colors */
-  --bg-page: #FFF9F2;
-  --bg-card: #FFFFFF;
-  --bg-section: rgba(255, 244, 232, 0.6);
-  --bg-overlay: rgba(255, 255, 255, 0.95);
+  /* Maritime Backgrounds - Darker Ocean Theme */
+  --bg-page: #1a2332;
+  --bg-card: #2c3e50;
+  --bg-section: rgba(44, 62, 80, 0.8);
+  --bg-overlay: rgba(26, 35, 50, 0.92);
   
-  /* Text - Exact Colors */
-  --text-primary: #232323;
-  --text-secondary: #353535;
-  --text-muted: #353535;
+  /* Text - High Contrast for Dark Theme */
+  --text-primary: #ecf0f1;
+  --text-secondary: #bdc3c7;
+  --text-muted: #95a5a6;
   
-  /* Borders - Exact Colors */
-  --border-primary: #999999;
-  --border-input: #999999;
-  --border-input-focus: #4D4D4D;
-  --border-light: rgba(153, 153, 153, 0.3);
+  /* Borders - Maritime Theme */
+  --border-primary: #34495e;
+  --border-input: #4a6741;
+  --border-input-focus: #3498db;
+  --border-light: rgba(52, 73, 94, 0.4);
   
-  /* AI Voice Interface Accent Colors */
-  --accent-purple-400: #987D9C;
-  --accent-purple-200: #F9E8FA;
-  --accent-blue-400: #768597;
-  --accent-blue-200: #E4EDF8;
-  --accent-orange-400: #BCA182;
-  --accent-orange-200: #FEEFDC;
-  --accent-pink-200: #FCC9C7;
-  --accent-green-200: #b8d1ba;
-  --accent-grey-200: #E9E1E1;
+  /* Maritime Accent Colors - More Vibrant */
+  --accent-purple-400: #9b59b6;
+  --accent-purple-200: rgba(155, 89, 182, 0.15);
+  --accent-blue-400: #3498db;
+  --accent-blue-200: rgba(52, 152, 219, 0.15);
+  --accent-orange-400: #e67e22;
+  --accent-orange-200: rgba(230, 126, 34, 0.15);
+  --accent-pink-200: rgba(231, 76, 60, 0.15);
+  --accent-green-200: rgba(46, 204, 113, 0.15);
+  --accent-grey-200: rgba(149, 165, 166, 0.15);
   
-  /* Glass Effect Colors */
-  --glass-bg: rgba(255, 255, 255, 0.2);
-  --glass-border: rgba(0, 0, 0, 0.1);
+  /* Glass Effect Colors - Maritime */
+  --glass-bg: rgba(44, 62, 80, 0.3);
+  --glass-border: rgba(52, 152, 219, 0.2);
   
-  /* Hero Gradients */
+  /* Maritime Hero Gradients */
   --gradient-hero-warm: linear-gradient(135deg,
-    rgba(252, 202, 199, 1) 0%,
-    rgba(253, 215, 197, 0.8) 25%,
-    rgba(254, 241, 229, 0.6) 50%,
-    rgba(255, 250, 243, 0.8) 75%,
-    rgba(252, 202, 199, 1) 100%);
+    rgba(44, 62, 80, 0.95) 0%,
+    rgba(52, 73, 94, 0.85) 25%,
+    rgba(26, 35, 50, 0.75) 50%,
+    rgba(44, 62, 80, 0.85) 75%,
+    rgba(26, 35, 50, 0.95) 100%);
     
   --gradient-hero-subtle: linear-gradient(180deg,
-    rgba(252, 202, 199, 0.95) 0%,
-    rgba(253, 215, 197, 0.8) 40%,
-    rgba(252, 202, 199, 1) 100%);
+    rgba(26, 35, 50, 0.92) 0%,
+    rgba(44, 62, 80, 0.85) 40%,
+    rgba(52, 73, 94, 0.92) 100%);
 }
 
 /* Reset and Base */
