@@ -491,9 +491,7 @@ body {
 .hero-video-container {
   margin: 2rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
 }
 
 .video-placeholder {
@@ -543,6 +541,13 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+}
+
+/* Information Box Container */
+.info-box-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
 }
 
 /* Information Box */
