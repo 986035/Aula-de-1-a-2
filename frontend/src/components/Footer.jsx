@@ -1,5 +1,5 @@
 import React from "react";
-import { Target, Telegram, Mail, Phone } from "lucide-react";
+import { Target, MessageCircle, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
               <h4 className="footer-title heading-3">Contato</h4>
               <div className="footer-contact">
                 <div className="contact-item">
-                  <Telegram size={16} />
+                  <MessageCircle size={16} />
                   <span className="caption">Acesso direto ao instrutor</span>
                 </div>
                 <div className="contact-item">
