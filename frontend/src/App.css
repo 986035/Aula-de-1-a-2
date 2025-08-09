@@ -70,7 +70,8 @@ body {
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--text-primary);
+  color: #f1c40f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .heading-1 {
