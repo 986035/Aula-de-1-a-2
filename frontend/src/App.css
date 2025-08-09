@@ -967,6 +967,22 @@ body {
     height: 250px;
   }
   
+  .info-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+  
+  .info-icon {
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+  
+  .info-text {
+    font-size: 0.875rem;
+  }
+  
   /* Disable fixed backgrounds on mobile for better performance */
   .section-with-bg,
   .section-with-bg-alt,
