@@ -1,4 +1,4 @@
-import { BookOpen, Users, Download, Award, Clock, CheckCircle, Telegram, Target, FileText, Video, Calendar } from "lucide-react";
+import { BookOpen, Users, Download, Award, Clock, CheckCircle, MessageCircle, Target, FileText, Video, Calendar } from "lucide-react";
 
 export const mockData = {
   product: {
@@ -69,7 +69,7 @@ export const mockData = {
       description: "10 horas de certificação para seu currículo"
     },
     {
-      icon: Telegram,
+      icon: MessageCircle,
       title: "Acesso ao Instrutor",
       description: "Canal direto no Telegram para tirar dúvidas"
     }
