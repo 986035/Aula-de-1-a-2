@@ -491,7 +491,9 @@ body {
 .hero-video-container {
   margin: 2rem 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .video-placeholder {
@@ -541,6 +543,53 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+}
+
+/* Information Box */
+.info-box {
+  background: rgba(241, 196, 15, 0.1);
+  border: 2px solid rgba(241, 196, 15, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 700px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(241, 196, 15, 0.2);
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-title {
+  color: #f1c40f;
+  font-family: 'SF Mono', monospace;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.info-text {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.info-text strong {
+  color: #f1c40f;
+  font-weight: 600;
 }
 
 .hero-actions {
