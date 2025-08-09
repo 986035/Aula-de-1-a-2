@@ -60,6 +60,19 @@ const LandingPage = () => {
                   <span className="video-text">▶ Assista ao vídeo de apresentação</span>
                 </div>
               </div>
+              
+              {/* Important Information Box */}
+              <div className="info-box">
+                <div className="info-icon">💡</div>
+                <div className="info-content">
+                  <strong className="info-title">INFORMAÇÃO IMPORTANTE:</strong>
+                  <p className="info-text">
+                    Você <strong>NÃO precisa gastar R$ 15.000+</strong> em cursos técnicos de ROV! 
+                    As empresas offshore fornecem treinamento completo ao contratar. 
+                    Este curso te prepara para <strong>CONSEGUIR a vaga!</strong>
+                  </p>
+                </div>
+              </div>
             </div>
             
             <div className="hero-actions">
