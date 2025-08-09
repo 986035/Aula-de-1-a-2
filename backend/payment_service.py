@@ -112,13 +112,13 @@ class PaymentService:
                 update_data = {
                     "status": checkout_status.status,
                     "payment_status": checkout_status.payment_status,
-                    "updated_at": PaymentTransaction().created_at
+                    "updated_at": datetime.utcnow()
                 }
                 
                 # Mark as completed only once
                 if checkout_status.payment_status == "paid" and current_payment_status != "completed":
                     update_data["payment_status"] = "completed"
-                    update_data["completed_at"] = PaymentTransaction().created_at
+                    update_data["completed_at"] = datetime.utcnow()
                     
                     # Perform post-payment operations here
                     await self._handle_successful_payment(transaction)
