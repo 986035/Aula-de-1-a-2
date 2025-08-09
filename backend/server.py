@@ -10,12 +10,12 @@ from typing import List
 import uuid
 from datetime import datetime
 
-from .models import (
+from models import (
     Lead, LeadCreate, AnalyticsEvent, AnalyticsEventCreate,
     CheckoutRequest, PaymentStatusResponse, CourseInfo
 )
-from .course_data import COURSE_INFO
-from .payment_service import PaymentService
+from course_data import COURSE_INFO
+from payment_service import PaymentService
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
