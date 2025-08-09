@@ -411,7 +411,8 @@ body {
 
 .section-with-bg .container,
 .section-with-bg-alt .container,
-.section-with-bg-underwater .container {
+.section-with-bg-underwater .container,
+.section-with-bg-cta .container {
   position: relative;
   z-index: 2;
 }
