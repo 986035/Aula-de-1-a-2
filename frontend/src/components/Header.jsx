@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X, Target } from "lucide-react";
 
-const Header = () => {
+const Header = ({ onPurchase }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
@@ -11,7 +11,9 @@ const Header = () => {
   };
 
   const handlePurchase = () => {
-    console.log("Navigate to purchase");
+    if (onPurchase) {
+      onPurchase('header');
+    }
   };
 
   return (
