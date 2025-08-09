@@ -365,9 +365,9 @@ body {
   display: none;
 }
 
-/* Background Sections */
+/* Background Sections - ROV Theme */
 .section-with-bg {
-  background-image: url('https://images.unsplash.com/photo-1651776663334-99ff55e80f2e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxvZmZzaG9yZSUyMG9pbCUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDc3MTkxMXww&ixlib=rb-4.1.0&q=85');
+  background-image: url('https://images.unsplash.com/photo-1590530794437-ad29186f324f?crop=entropy&cs=srgb&fm=jpg&q=85');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -375,7 +375,7 @@ body {
 }
 
 .section-with-bg-alt {
-  background-image: url('https://images.unsplash.com/photo-1733239616870-633578a64301?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHx1bmRlcndhdGVyJTIwZXF1aXBtZW50fGVufDB8fHx8MTc1NDc3MTkyNXww&ixlib=rb-4.1.0&q=85');
+  background-image: url('https://images.pexels.com/photos/33362145/pexels-photo-33362145.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -383,7 +383,15 @@ body {
 }
 
 .section-with-bg-underwater {
-  background-image: url('https://images.pexels.com/photos/347136/pexels-photo-347136.jpeg');
+  background-image: url('https://cdn.pixabay.com/photo/2020/06/10/14/20/submarine-5282908_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-with-bg-cta {
+  background-image: url('https://images.pexels.com/photos/33285083/pexels-photo-33285083.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
