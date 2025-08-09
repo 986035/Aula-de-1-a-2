@@ -1,11 +1,12 @@
 // Configuration file for easy modifications
 export const siteConfig = {
-  // Images - Easy to change
+  // Images - Easy to change - ROV Specific Theme
   images: {
     heroBackground: "https://images.unsplash.com/photo-1705590002103-ca91a4fb5ca0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMG9pbCUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDc3MTkxMXww&ixlib=rb-4.1.0&q=85",
-    benefitsBackground: "https://images.unsplash.com/photo-1651776663334-99ff55e80f2e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxvZmZzaG9yZSUyMG9pbCUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDc3MTkxMXww&ixlib=rb-4.1.0&q=85",
-    contentBackground: "https://images.unsplash.com/photo-1733239616870-633578a64301?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHx1bmRlcndhdGVyJTIwZXF1aXBtZW50fGVufDB8fHx8MTc1NDc3MTkyNXww&ixlib=rb-4.1.0&q=85",
-    instructorBackground: "https://images.pexels.com/photos/347136/pexels-photo-347136.jpeg"
+    benefitsBackground: "https://images.unsplash.com/photo-1590530794437-ad29186f324f?crop=entropy&cs=srgb&fm=jpg&q=85", // ROV equipment underwater
+    contentBackground: "https://images.pexels.com/photos/33362145/pexels-photo-33362145.jpeg", // Yellow underwater ROV
+    instructorBackground: "https://cdn.pixabay.com/photo/2020/06/10/14/20/submarine-5282908_1280.jpg", // Specific ROV submarine
+    ctaBackground: "https://images.pexels.com/photos/33285083/pexels-photo-33285083.jpeg" // Underwater robotic equipment
   },
   
   // Video settings
