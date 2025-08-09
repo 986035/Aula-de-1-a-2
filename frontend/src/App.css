@@ -417,9 +417,9 @@ body {
   z-index: 2;
 }
 
-/* Hero Section with Background */
+/* Hero Section with Custom Background */
 .hero-with-bg {
-  background-image: url('https://images.unsplash.com/photo-1705590002103-ca91a4fb5ca0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMG9pbCUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDc3MTkxMXww&ixlib=rb-4.1.0&q=85');
+  background-image: url('https://customer-assets.emergentagent.com/job_brindada-rov-sales/artifacts/esbx2o0o_1.%20Hero%20%28impress%C3%A3o%20inicial%29.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
