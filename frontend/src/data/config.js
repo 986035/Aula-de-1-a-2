@@ -19,8 +19,8 @@ export const siteConfig = {
   // Product details - Easy to modify
   product: {
     name: "VAGA BLINDADA ROV",
-    price: "R$ 297,00",
-    oldPrice: "R$ 497,00",
+    price: "R$ 147,00",
+    oldPrice: "R$ 297,00",
     currency: "BRL"
   },
   
