@@ -5,7 +5,7 @@ from typing import Dict, Any
 COURSE_PACKAGES = {
     "vaga_blindada": {
         "name": "VAGA BLINDADA ROV",
-        "amount": 297.00,  # MUST be float
+        "amount": 147.00,  # MUST be float
         "currency": "BRL",
         "description": "Curso completo para conquistar vaga de trainee ROV"
     }
