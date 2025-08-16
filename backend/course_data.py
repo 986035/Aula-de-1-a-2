@@ -30,7 +30,7 @@ COURSE_INFO = {
     },
     
     "stats": [
-        {"number": "15+", "label": "Anos de Experiência"},
+        {"number": "+ de 15", "label": "Anos de Experiência"},
         {"number": "10", "label": "Aulas Completas"},
         {"number": "100%", "label": "Método Prático"}
     ],
